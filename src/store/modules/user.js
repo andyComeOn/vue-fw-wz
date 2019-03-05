@@ -82,7 +82,6 @@ const user = {
       });
     },
 
-
     // 获取用户信息
     GetInfo({ commit, state }) {
       return new Promise((resolve, reject) => {
@@ -113,7 +112,6 @@ const user = {
         });
       });
     },
-
 
     // 登出
     LogOut({ commit, state }) {

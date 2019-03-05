@@ -145,7 +145,6 @@ export default {
             .dispatch("LoginByEmail", this.loginForm)
             .then(() => {
               this.$Message.success("登录成功");
-
               this.loading = false;
               this.$router.push({ path: "/" });
             })
