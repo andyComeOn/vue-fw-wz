@@ -22,10 +22,10 @@
           placeholder="Username"
           autoComplete="on"
         >
-        <Icon
-          type="ios-person-outline"
-          slot="prepend"
-        ></Icon>
+          <Icon
+            type="ios-person-outline"
+            slot="prepend"
+          ></Icon>
         </Input>
       </Form-item>
       <Form-item prop="password">
@@ -35,10 +35,10 @@
           placeholder="Password"
           @keyup.enter.native="handleLogin"
         >
-        <Icon
-          type="ios-locked-outline"
-          slot="prepend"
-        ></Icon>
+          <Icon
+            type="ios-locked-outline"
+            slot="prepend"
+          ></Icon>
         </Input>
       </Form-item>
       <Form-item>
