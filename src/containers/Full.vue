@@ -4,7 +4,7 @@
     <div class="app-body">
       <Sidebar/>
       <main class="main">
-        <breadcrumb :list="list"/>
+        <!-- <breadcrumb :list="list"/> -->
         <div class="container-fluid">
           <router-view></router-view>
         </div>
@@ -23,7 +23,7 @@ import AppFooter from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 
 export default {
-  name: 'full',
+  // name: 'full',
   components: {
     AppHeader,
     Sidebar,

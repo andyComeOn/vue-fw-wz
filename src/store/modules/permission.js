@@ -21,7 +21,6 @@ function hasPermission(roles, route) {
 function filterAsyncRouter(asyncRouterMap, roles) {
   const accessedRouters = asyncRouterMap.filter(route => {
     if (hasPermission(roles, route)) {
-
       if (route.children && route.children.length) {
         route.children = filterAsyncRouter(route.children, roles)
       }
@@ -60,19 +59,17 @@ const permission = {
       // state.routers.forEach(function(e){
       //     if(e.name==="首页"){
       //     state.siderbar_routers=e;
-            
       //     }
-
       // })
-
     },
     SET_NOW_ROUTERS: (state, to) => {
       // 递归访问 accessedRouters，找到包含to 的那个路由对象，设置给siderbar_routers
       console.log(state.addRouters)
       state.addRouters.forEach(e => {
         if(e.children&& e.children.length ){
-          if( getNowRouter(e.children,to)===true)
-                state.siderbar_routers=e;
+          if( getNowRouter(e.children,to)===true) {
+            state.siderbar_routers=e;
+          }
         }
       })
     }
@@ -87,8 +84,6 @@ const permission = {
         } else {
           accessedRouters = filterAsyncRouter(asyncRouterMap, roles)
         }
-
-
         commit('SET_ROUTERS', accessedRouters);
         resolve();
       })
