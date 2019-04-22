@@ -28,10 +28,11 @@ function filterAsyncRouter(asyncRouterMap, roles) {
     }
     return false
   })
+  console.log(accessedRouters);
   return accessedRouters
 }
 
-
+// 中间的一个方法
 function getNowRouter(asyncRouterMap, to) {
   return asyncRouterMap.some(route => {
     if(to.path.indexOf(route.path) !==-1) {
@@ -44,8 +45,7 @@ function getNowRouter(asyncRouterMap, to) {
 
 }
 
-
-
+// 输出permission
 const permission = {
   state: {
     routers: constantRouterMap,
@@ -65,6 +65,7 @@ const permission = {
     SET_NOW_ROUTERS: (state, to) => {
       // 递归访问 accessedRouters，找到包含to 的那个路由对象，设置给siderbar_routers
       console.log(state.addRouters)
+      debugger;
       state.addRouters.forEach(e => {
         if(e.children&& e.children.length ){
           if( getNowRouter(e.children,to)===true) {
@@ -88,7 +89,6 @@ const permission = {
         resolve();
       })
     },
- 
     getNowRoutes({ commit }, data) {
       return new Promise(resolve => {
         //data => to

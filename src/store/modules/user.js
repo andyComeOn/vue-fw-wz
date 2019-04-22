@@ -65,13 +65,20 @@ const user = {
     // 邮箱登录
     LoginByEmail({ commit }, userInfo) {
       const email = userInfo.email.trim();
-      debugger;
+      // debugger;
       return new Promise((resolve, reject) => {
         loginByEmail(email, userInfo.password).then(response => {
-          debugger;
+          // debugger;
           const data = response.data;
           console.log('-------------');
-          console.log(data);
+
+          // 这次打印的是mock中的数据
+          // introduction: "我是超级管理员"
+          // name: "Super Admin"
+          // role: ["admin"]
+          // token: "admin"
+          // uid: "001"
+          console.log(data); 
           Cookies.set('Admin-Token', response.data.token);
           commit('SET_TOKEN', data.token);
           commit('SET_EMAIL', email);
