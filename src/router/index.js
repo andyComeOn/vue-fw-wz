@@ -42,12 +42,12 @@ export default new Router({
 export const asyncRouterMap = [
   {
     path: '/',
-    redirect: '/dashboard',
+    redirect: '/introduction',
     name: '首页',
     component: Full,
     hidden: false,  // 这个默认就是false，不用声明这句代码。
     children: [
-      {path: '/dashboard',name: 'Dashboard',icon:'speedometer',component: _import('Dashboard')},
+      // {path: '/dashboard',name: 'Dashboard',icon:'speedometer',component: _import('Dashboard')},
       {path: '/introduction',name: '介绍',icon:'thumbsup',component: _import('Introduction')},
       {
         path: '/components',

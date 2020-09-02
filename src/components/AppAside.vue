@@ -56,7 +56,7 @@
 
 <script>
 export default {
-  name: 'aside'
+  name: 'appAside'
 }
 </script>
 <style type="text/css">

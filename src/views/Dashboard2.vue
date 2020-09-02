@@ -165,7 +165,7 @@
               <li >
                 <div  class="staff_list"> 
                   <div class="staff_avatar">
-                      <Avatar src="http://www.jq22.com/demo/AdminEx-141217204554/images/photos/user1.png" size="large" />
+                      <!-- <Avatar src="http://www.jq22.com/demo/AdminEx-141217204554/images/photos/user1.png" size="large" /> -->
                   </div>
                   <div class="staff_progress">
                    <p> <span class="staff_name"> Jhon James </span><span> - Project Lead</span></p>
@@ -180,7 +180,7 @@
               <li >
                 <div  class="staff_list"> 
                   <div class="staff_avatar">
-                      <Avatar src="http://www.jq22.com/demo/AdminEx-141217204554/images/photos/user2.png" size="large" />
+                      <!-- <Avatar src="http://www.jq22.com/demo/AdminEx-141217204554/images/photos/user2.png" size="large" /> -->
                   </div>
                   <div class="staff_progress">
                    <p> <span class="staff_name"> Jhon James </span><span> - Project Lead</span></p>
@@ -195,7 +195,7 @@
               <li >
                 <div  class="staff_list"> 
                   <div class="staff_avatar">
-                      <Avatar src="http://www.jq22.com/demo/AdminEx-141217204554/images/photos/user3.png" size="large" />
+                      <!-- <Avatar src="http://www.jq22.com/demo/AdminEx-141217204554/images/photos/user3.png" size="large" /> -->
                   </div>
                   <div class="staff_progress">
                    <p> <span class="staff_name"> Hoffman Doe </span><span> - Support</span></p>
@@ -211,7 +211,7 @@
               <li >
                 <div  class="staff_list"> 
                   <div class="staff_avatar">
-                      <Avatar src="http://www.jq22.com/demo/AdminEx-141217204554/images/photos/user4.png" size="large" />
+                      <!-- <Avatar src="http://www.jq22.com/demo/AdminEx-141217204554/images/photos/user4.png" size="large" /> -->
                   </div>
                   <div class="staff_progress">
                    <p> <span class="staff_name"> Jane Doe  </span><span> - Marketing</span></p>
@@ -258,7 +258,7 @@
                         <div class="panel-body">
                             <div class="media usr-info">
                                 <a href="#" class="pull-left">
-                                    <img class="thumb" src="http://www.jq22.com/demo/AdminEx-141217204554/images/photos/user2.png" alt="">
+                                    <!-- <img class="thumb" src="http://www.jq22.com/demo/AdminEx-141217204554/images/photos/user2.png" alt=""> -->
                                 </a>
                                 <div class="media-body">
                                     <h4 class="media-heading">Mila Watson</h4>

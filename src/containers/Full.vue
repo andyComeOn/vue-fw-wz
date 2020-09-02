@@ -16,10 +16,10 @@
 </template>
 
 <script>
-import AppHeader from '../components/Header'
+import AppHeader from '../components/AppHeader'
 import Sidebar from '../components/Sidebar'
-import AppAside from '../components/Aside'
-import AppFooter from '../components/Footer'
+import AppAside from '../components/AppAside'
+import AppFooter from '../components/AppFooter'
 import Breadcrumb from '../components/Breadcrumb'
 
 export default {

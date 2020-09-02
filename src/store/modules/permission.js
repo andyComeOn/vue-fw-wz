@@ -31,18 +31,19 @@ function filterAsyncRouter(asyncRouterMap, roles) {
   console.log(accessedRouters);
   return accessedRouters
 }
+[], [], []
 
 // 中间的一个方法
 function getNowRouter(asyncRouterMap, to) {
   return asyncRouterMap.some(route => {
+    // debugger
     if(to.path.indexOf(route.path) !==-1) {
+      // debugger
       return true;
-    }
-    else if (route.children && route.children.length) { //如果有孩子就遍历孩子
-      return  getNowRouter(route.children, to)
+    } else if (route.children && route.children.length) { //如果有孩子就遍历孩子
+      return getNowRouter(route.children, to)
     }
   })
-
 }
 
 // 输出permission
@@ -64,12 +65,13 @@ const permission = {
     },
     SET_NOW_ROUTERS: (state, to) => {
       // 递归访问 accessedRouters，找到包含to 的那个路由对象，设置给siderbar_routers
-      console.log(state.addRouters)
-      debugger;
+      console.log(state.addRouters) // debugger;
       state.addRouters.forEach(e => {
-        if(e.children&& e.children.length ){
-          if( getNowRouter(e.children,to)===true) {
-            state.siderbar_routers=e;
+        if(e.children && e.children.length) {
+          // debugger
+          if (getNowRouter(e.children,to) === true) {
+			state.siderbar_routers=e;
+			console.log('state.siderbar_routers',state.siderbar_routers)
           }
         }
       })
@@ -89,9 +91,10 @@ const permission = {
         resolve();
       })
     },
-    getNowRoutes({ commit }, data) {
+    GetNowRoutes({ commit }, data) {
       return new Promise(resolve => {
         //data => to
+        console.log('data => to', data)
         commit('SET_NOW_ROUTERS', data);
         resolve();
       })

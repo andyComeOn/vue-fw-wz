@@ -179,7 +179,7 @@
 import navbar from "./Navbar";
 
 export default {
-  name: "header",
+  name: "appHeader",
   components: {
     navbar
   },
